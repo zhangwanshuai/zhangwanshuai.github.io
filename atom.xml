@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DZ</title>
+  
+  <subtitle>一起遇见未来</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-04-01T14:45:58.472Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Da Zhi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谓语情态</title>
+    <link href="http://example.com/2022/04/01/%E8%B0%93%E8%AF%AD%E6%83%85%E6%80%81/"/>
+    <id>http://example.com/2022/04/01/%E8%B0%93%E8%AF%AD%E6%83%85%E6%80%81/</id>
+    <published>2022-04-01T14:42:25.000Z</published>
+    <updated>2022-04-01T14:45:58.472Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="谓语情态"><a href="#谓语情态" class="headerlink" title="谓语情态"></a>谓语情态</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E8%B0%93%E8%AF%AD%E6%83%85%E6%80%81.jpg" alt="谓语情态"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;谓语情态&quot;&gt;&lt;a href=&quot;#谓语情态&quot; class=&quot;headerlink&quot; title=&quot;谓语情态&quot;&gt;&lt;/a&gt;谓语情态&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/</summary>
+      
+    
+    
+    
+    
+    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定积分</title>
+    <link href="http://example.com/2022/04/01/%E5%AE%9A%E7%A7%AF%E5%88%86/"/>
+    <id>http://example.com/2022/04/01/%E5%AE%9A%E7%A7%AF%E5%88%86/</id>
+    <published>2022-04-01T14:41:58.000Z</published>
+    <updated>2022-04-01T14:45:07.958Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E5%AE%9A%E7%A7%AF%E5%88%86.jpg" alt="定积分"></p><h2 id="定积分的性质"><a href="#定积分的性质" class="headerlink" title="定积分的性质"></a>定积分的性质</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%80%A7%E8%B4%A8.jpg" alt="定积分的性质"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;定积分&quot;&gt;&lt;a href=&quot;#定积分&quot; class=&quot;headerlink&quot; title=&quot;定积分&quot;&gt;&lt;/a&gt;定积分&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E5%</summary>
+      
+    
+    
+    
+    
+    <category term="高数" scheme="http://example.com/tags/%E9%AB%98%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谓语时态</title>
+    <link href="http://example.com/2022/03/31/%E8%B0%93%E8%AF%AD%E6%97%B6%E6%80%81/"/>
+    <id>http://example.com/2022/03/31/%E8%B0%93%E8%AF%AD%E6%97%B6%E6%80%81/</id>
+    <published>2022-03-31T14:09:17.000Z</published>
+    <updated>2022-03-31T14:29:10.134Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="谓语时态"><a href="#谓语时态" class="headerlink" title="谓语时态"></a>谓语时态</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E8%B0%93%E8%AF%AD%E6%97%B6%E6%80%811.jpg" alt="谓语时态1"></p><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E8%B0%93%E8%AF%AD%E6%97%B6%E6%80%812.jpg" alt="谓语时态2"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;谓语时态&quot;&gt;&lt;a href=&quot;#谓语时态&quot; class=&quot;headerlink&quot; title=&quot;谓语时态&quot;&gt;&lt;/a&gt;谓语时态&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/</summary>
+      
+    
+    
+    
+    
+    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微分中值定理及导数应用</title>
+    <link href="http://example.com/2022/03/31/%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E5%8F%8A%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8/"/>
+    <id>http://example.com/2022/03/31/%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E5%8F%8A%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8/</id>
+    <published>2022-03-31T14:08:17.000Z</published>
+    <updated>2022-03-31T14:19:43.583Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="微分中值定理"><a href="#微分中值定理" class="headerlink" title="微分中值定理"></a>微分中值定理</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.jpg" alt="微分中值定理"></p><h2 id="导数应用"><a href="#导数应用" class="headerlink" title="导数应用"></a>导数应用</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8.jpg" alt="导数应用"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;微分中值定理&quot;&gt;&lt;a href=&quot;#微分中值定理&quot; class=&quot;headerlink&quot; title=&quot;微分中值定理&quot;&gt;&lt;/a&gt;微分中值定理&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/zhangwanshuai/im</summary>
+      
+    
+    
+    
+    
+    <category term="高数" scheme="http://example.com/tags/%E9%AB%98%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>倒数与微分</title>
+    <link href="http://example.com/2022/03/30/%E5%80%92%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/"/>
+    <id>http://example.com/2022/03/30/%E5%80%92%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/</id>
+    <published>2022-03-30T14:58:22.000Z</published>
+    <updated>2022-03-31T04:44:57.960Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E5%AF%BC%E6%95%B0.jpg" alt="导数"></p><h2 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E6%B1%82%E5%AF%BC.jpg" alt="求导"></p><h2 id="微分"><a href="#微分" class="headerlink" title="微分"></a>微分</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E5%BE%AE%E5%88%86.jpg" alt="微分"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;导数&quot;&gt;&lt;a href=&quot;#导数&quot; class=&quot;headerlink&quot; title=&quot;导数&quot;&gt;&lt;/a&gt;导数&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E5%AF%B</summary>
+      
+    
+    
+    
+    
+    <category term="高数" scheme="http://example.com/tags/%E9%AB%98%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello</title>
+    <link href="http://example.com/2022/03/29/hello/"/>
+    <id>http://example.com/2022/03/29/hello/</id>
+    <published>2022-03-29T15:05:32.000Z</published>
+    <updated>2022-03-29T15:05:32.213Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/03/29/hello-world/"/>
+    <id>http://example.com/2022/03/29/hello-world/</id>
+    <published>2022-03-29T14:56:44.238Z</published>
+    <updated>2022-03-29T14:55:16.541Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
