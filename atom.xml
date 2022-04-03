@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-01T14:45:58.472Z</updated>
+  <updated>2022-04-03T14:27:19.835Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谓语语态</title>
+    <link href="http://example.com/2022/04/03/%E8%B0%93%E8%AF%AD%E8%AF%AD%E6%80%81/"/>
+    <id>http://example.com/2022/04/03/%E8%B0%93%E8%AF%AD%E8%AF%AD%E6%80%81/</id>
+    <published>2022-04-03T14:20:26.000Z</published>
+    <updated>2022-04-03T14:27:19.835Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="谓语语态"><a href="#谓语语态" class="headerlink" title="谓语语态"></a>谓语语态</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangwanshuai/img/picgo/%E8%B0%93%E8%AF%AD%E8%AF%AD%E6%80%81.jpg" alt="谓语语态"></p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>谓语情态</title>
