@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Linux下53端口占用</title>
+    <link href="/2024/04/10/Linux%E4%B8%8B53%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/"/>
+    <url>/2024/04/10/Linux%E4%B8%8B53%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<ul><li>开启服务监听53端口时提示53端口已被占用：</li></ul><p><code>failed to create listening socket for port 53</code></p><ul><li>首先查看端口占用情况：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo netstat -anlp | grep -w LISTEN<br></code></pre></td></tr></table></figure><ul><li>看到输出信息：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">......<br>tcp        0      0 127.0.0.53:53              0.0.0.0:*               LISTEN      735/systemd-resolved<br>......<br>tcp6       0      0 :::53                      :::*                    LISTEN      735/systemd-resolved<br><br></code></pre></td></tr></table></figure><ul><li>停用<code>systemd-resolved</code>服务：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo systemctl stop systemd-resolved<br></code></pre></td></tr></table></figure><ul><li>编辑编辑 <code>/etc/systemd/resolved.conf</code> 文件：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo vim /etc/systemd/resolved.conf<br></code></pre></td></tr></table></figure><ul><li>修改文件中，<code>[Resolve]</code> 部分：</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c">[Resolve]<br>DNS=<span class="hljs-number">8.8</span><span class="hljs-number">.8</span><span class="hljs-number">.8</span>  #取消注释，增加dns<br>#FallbackDNS=<br>#Domains=<br>#LLMNR=no<br>#MulticastDNS=no<br>#DNSSEC=no<br>#Cache=yes<br>DNSStubListener=no  #取消注释，把yes改为no<br></code></pre></td></tr></table></figure><ul><li>创建修改文件链接：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf<br></code></pre></td></tr></table></figure><ul><li>这样就解除了53端口的占用。</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>science</title>
     <link href="/2024/03/18/science/"/>
     <url>/2024/03/18/science/</url>

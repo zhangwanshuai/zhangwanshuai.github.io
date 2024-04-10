@@ -16,22 +16,22 @@
   <meta name="author" content="张万帅">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1、tool​	1.1 No.1 ​	1.2 No.2 2、link​	No.1">
+    <meta name="description" content="开启服务监听53端口时提示53端口已被占用：  failed to create listening socket for port 53  首先查看端口占用情况：  1sudo netstat -anlp | grep -w LISTEN   看到输出信息：  12345......tcp        0      0 127.0.0.53:53              0.0.0.0:*">
 <meta property="og:type" content="article">
-<meta property="og:title" content="science">
-<meta property="og:url" content="https://blog.dzqbj.top/2024/03/18/science/index.html">
+<meta property="og:title" content="Linux下53端口占用">
+<meta property="og:url" content="https://blog.dzqbj.top/2024/04/10/Linux%E4%B8%8B53%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/index.html">
 <meta property="og:site_name" content="张万帅的笔记本">
-<meta property="og:description" content="1、tool​	1.1 No.1 ​	1.2 No.2 2、link​	No.1">
+<meta property="og:description" content="开启服务监听53端口时提示53端口已被占用：  failed to create listening socket for port 53  首先查看端口占用情况：  1sudo netstat -anlp | grep -w LISTEN   看到输出信息：  12345......tcp        0      0 127.0.0.53:53              0.0.0.0:*">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-03-18T14:39:43.000Z">
-<meta property="article:modified_time" content="2024-03-18T14:47:27.398Z">
+<meta property="article:published_time" content="2024-04-10T05:15:03.000Z">
+<meta property="article:modified_time" content="2024-04-10T05:26:06.992Z">
 <meta property="article:author" content="张万帅">
-<meta property="article:tag" content="tool">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>science - 张万帅的笔记本</title>
+  <title>Linux下53端口占用 - 张万帅的笔记本</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="science"></span>
+            <span id="subtitle" data-typed-text="Linux下53端口占用"></span>
           
         </div>
 
@@ -208,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-03-18 22:39" pubdate>
-          2024年3月18日 晚上
+        <time datetime="2024-04-10 13:15" pubdate>
+          2024年4月10日 下午
         </time>
       </span>
     
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          11 字
+          148 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -268,14 +268,48 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">science</h1>
+            <h1 id="seo-header">Linux下53端口占用</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="1、tool"><a href="#1、tool" class="headerlink" title="1、tool"></a>1、tool</h1><p>​	1.1 <a target="_blank" rel="noopener" href="https://github.com/XTLS/Xray-core">No.1</a></p>
-<p>​	1.2 <a target="_blank" rel="noopener" href="https://github.com/bannedbook/fanqiang">No.2</a></p>
-<h1 id="2、link"><a href="#2、link" class="headerlink" title="2、link"></a>2、link</h1><p>​	<a target="_blank" rel="noopener" href="https://github.com/Helpsoftware/fanqiang">No.1</a></p>
+                <ul>
+<li>开启服务监听53端口时提示53端口已被占用：</li>
+</ul>
+<p><code>failed to create listening socket for port 53</code></p>
+<ul>
+<li>首先查看端口占用情况：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo netstat -anlp | grep -w LISTEN<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>看到输出信息：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">......<br>tcp        0      0 127.0.0.53:53              0.0.0.0:*               LISTEN      735/systemd-resolved<br>......<br>tcp6       0      0 :::53                      :::*                    LISTEN      735/systemd-resolved<br><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>停用<code>systemd-resolved</code>服务：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo systemctl stop systemd-resolved<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>编辑编辑 <code>/etc/systemd/resolved.conf</code> 文件：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo vim /etc/systemd/resolved.conf<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>修改文件中，<code>[Resolve]</code> 部分：</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c">[Resolve]<br>DNS=<span class="hljs-number">8.8</span><span class="hljs-number">.8</span><span class="hljs-number">.8</span>  #取消注释，增加dns<br>#FallbackDNS=<br>#Domains=<br>#LLMNR=no<br>#MulticastDNS=no<br>#DNSSEC=no<br>#Cache=yes<br>DNSStubListener=no  #取消注释，把yes改为no<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>创建修改文件链接：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>这样就解除了53端口的占用。</li>
+</ul>
 
                 
               </div>
@@ -288,7 +322,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/tool/" class="print-no-link">#tool</a>
+        <a href="/tags/Linux/" class="print-no-link">#Linux</a>
       
     </div>
   
@@ -300,8 +334,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>science</div>
-      <div>https://blog.dzqbj.top/2024/03/18/science/</div>
+      <div>Linux下53端口占用</div>
+      <div>https://blog.dzqbj.top/2024/04/10/Linux下53端口占用/</div>
     </div>
     <div class="license-meta">
       
@@ -313,7 +347,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年3月18日</div>
+          <div>2024年4月10日</div>
         </div>
       
       
@@ -345,18 +379,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/04/10/Linux%E4%B8%8B53%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/" title="Linux下53端口占用">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Linux下53端口占用</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/03/18/%E9%9A%8F%E7%AC%94/" title="随笔">
-                        <span class="hidden-mobile">随笔</span>
+                      <a href="/2024/03/18/science/" title="science">
+                        <span class="hidden-mobile">science</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
